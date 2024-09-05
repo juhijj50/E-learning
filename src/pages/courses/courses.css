@@ -1,0 +1,51 @@
+.courses {
+  padding: 80px 0;
+  text-align: center;
+  min-height: 60vh;
+
+  h2 {
+    font-size: 32px;
+    color: #8a4baf;
+    margin-bottom: 30px;
+    transition: color 0.3s ease;
+  }
+
+  .course-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  /* Add hover effect on the heading */
+  h2:hover {
+    color: #674636;
+  }
+
+  /* Course cards styling */
+  .course-card {
+    padding: 20px;
+    background-color: #FFFBF5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  /* On hover, scale up the course cards slightly and enhance shadow */
+  .course-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .course-container {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    h2 {
+      font-size: 28px;
+    }
+  }
+}
