@@ -75,7 +75,7 @@ export const UserContextProvider = ({ children }) => {
     try {
       const { data } = await axios.get(`${server}/api/user/me`, {
         headers: {
-          Authorization: `Bearer ${localStorage.getItem("token")}`
+          Authorization: `Bearer ${token}`,
         },
       });
 
